@@ -47,8 +47,18 @@ body {
     text-decoration: none;
 }
 
-.righter:last-child {
+.righter:last-of-type {
     margin-left: 14px;
+}
+
+.header-buy {
+    position: relative;
+}
+
+.buy-number {
+    position: absolute;
+    top: -20px;
+    left: 15px;
 }
 
 header {
@@ -154,6 +164,7 @@ main {
     background-color: #F9F9F9;
     border: 1px solid #F2F2F2;
     box-shadow: -8px -8px 15px #FFFFFF, 8px 8px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
 }
 
 .card-photo {
@@ -242,6 +253,18 @@ main {
     border: 1px solid #05AF3487;
 }
 
+.img-new {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+
+}
+
+.card-new .img-new {
+    display: block;
+}
+
 .slider {
     padding-top: 50px;
     justify-content: center;
@@ -282,10 +305,19 @@ footer {
     padding-bottom: 130px;
 }
 
-.contacts-left, .contacts-right {
-    justify-content: space-between;
-    width: 660px;
+.contacts div {
+    width: 33%;
+    flex-grow: 1;
 }
+
+.contacts-center {
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.contacts-right {
+    justify-content: flex-end;
+} 
 
 .payment-delivery {
     column-gap: 50px;
