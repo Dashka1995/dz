@@ -1,0 +1,63 @@
+@import url(./reset.css);
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-down {
+    background-color: rgb(179, 1, 255);
+    display: none;
+    flex-direction: column;
+}
+
+.products-cont .drop-down {
+    left: 0;
+    right: 0;
+}
+
+.product2-cont .drop-down {
+    top: 0;
+    left: 96.5px;
+    right: -96.5px;
+}
+
+nav {
+    background-color: rgb(228, 167, 255);
+    border-bottom: 2px solid rgb(179, 1, 255);
+    column-gap: 20px;
+    display: flex;
+}
+
+.products-cont {
+    display: inline-block;
+}
+
+.products-cont:hover {
+    background-color: rgb(179, 1, 255);
+}
+
+.products-cont:hover .drop-down-products {
+    display: flex;
+}
+
+.product2-cont:hover .drop-down-product2 {
+    display: flex;
+}
